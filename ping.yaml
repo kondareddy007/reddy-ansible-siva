@@ -1,5 +1,5 @@
 - name: ping server
-  hosts: web
+  hosts: node
   tarsks:
   - name: ping the server
     ansible.builtin.ping:
