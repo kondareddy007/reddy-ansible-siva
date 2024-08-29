@@ -1,14 +1,13 @@
 ---
 - name: Install nginx server
   hosts: node
-  become:yes 
+  become: true
   tasks:
-   - name: Install nginx server
-     ansible.builtin.package
-       name: nginx
-       state: present
-   - name: Start service
-     ansible.builtin.service
-       name: nginx
-       state: started
-     
+    - name: Install nginx server
+      yum:
+        name: nginx
+        state: present
+    - name: Start service
+      service:
+        name: nginx
+        state: started
