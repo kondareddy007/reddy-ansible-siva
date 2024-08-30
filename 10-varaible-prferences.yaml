@@ -3,16 +3,16 @@
   become: true
   # vars_files:
   # - variable.yaml
-  vars_prompt:
-  - name: PERSON
-    prompt: Enter person name
-    private: false
-  - name: WISHES
-    prompt: Enter the wishes
-    private: false
-  vars:
-   PERSON: "Siva from global variable"
-   WISHES: "Morning" 
+  # vars_prompt:
+  # - name: PERSON
+  #   prompt: Enter person name
+  #   private: false
+  # - name: WISHES
+  #   prompt: Enter the wishes
+  #   private: false
+  # vars:
+  #  PERSON: "Siva from global variable"
+  #  WISHES: "Morning" 
   
   tasks:
    - name: Check which variabe taken first
