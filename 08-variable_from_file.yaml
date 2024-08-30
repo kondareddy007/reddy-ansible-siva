@@ -1,9 +1,8 @@
-- name: Get variables from variable file
-  hosts: localhosts
-  vars_file:
+- name: Task level variable
+  hosts: localhost
+  vars_files:
   - variable.yaml
   tasks:
-   - name: variables get from variable.yaml file
+   - name: Get variable from varaible.yaml file
      debug:
        msg: "I am learning {{Course}}, Trainer is {{Trainer}} With duration is {{Duration}} "
-    
