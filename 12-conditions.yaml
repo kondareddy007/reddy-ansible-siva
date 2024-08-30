@@ -2,5 +2,5 @@
   hosts: localhost
   tasks:
    - name: Checking user is exists or not
-      user: id roboshop
-      risister: user
+     ansible.builtin.command : id roboshop
+     risister: user
