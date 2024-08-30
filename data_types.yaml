@@ -3,22 +3,22 @@
   vars:
    NAME: Siva
    SKILLS:
-   - Devops
-   - Python
-   - C
-   - Java
+    - Devops
+    - Python
+    - C
+    - Java
    EXPERIANCE:
      Devops: 7
      Docker: 4
      Ansible: 3
    Trainer: true
-   tasks:
-    - name: Print key value
-      debug:
-        msg: "Name is {{NAME}}"
-    - name: Print key value
-      debug:
-        msg: "Skills is {{SKILLS}}"
-    - name: Print key value
-      debug:
-        msg: "Experinace is {{EXPERIANCE}}"
+  tasks:
+   - name: Print key value
+     debug:
+       msg: "Name: {{NAME}}"
+   - name: Print key value
+     debug:
+       msg: "Skills: {{SKILLS}}"
+   - name: Print key value
+     debug:
+       msg: "Experinace: {{EXPERIANCE}}"
