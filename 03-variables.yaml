@@ -1,10 +1,16 @@
 ---
-- name: Variable concept
+- name: Variable Types
   hosts: localhost
   tasks:
-    - name: Send one message
+    - name: Global variable
       debug:
-        msg: hellow darling
-    - name: Send another message
+        msg: "variable TASK or Global level"
+    - name: Task level variable
       debug:
-        msg: hellow pessi
+        msg: "Task level varibale"
+    - name: Prompt variable
+      debug:
+        msg: "Prompt varaible, Like username and password"
+    - name: Inventory varaible
+      debug:
+        msg: "Inventory variable. We have to add variable in inventory file"
