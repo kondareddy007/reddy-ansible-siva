@@ -1,6 +1,6 @@
 - name: Variable PLAY-1
   hosts: localhost
-  vars:
+  vars:  #it is like global varaibles
    Course: "Devops"
    Trainer: "Siva"
    Duration: "110 HRS"

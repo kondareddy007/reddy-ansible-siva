@@ -1,0 +1,10 @@
+- name: Task level variable
+  hosts: localhost
+  tasks:
+   - name: Task level variables
+     vars:
+      Course: Python
+      Trainer: Konda
+      Duration: "110 HRS"
+     debug:
+       msg: "I am learning {{Course}}, Trainer is {{Trainer}} With duration is {{Duration}} "
