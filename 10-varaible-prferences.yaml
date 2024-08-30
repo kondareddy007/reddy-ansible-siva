@@ -5,12 +5,12 @@
   vars_prompt:
   - name: PERSON
     prompt: Enter person name
-    private: flase 
+    private: false
   - name: WISHES
     prompt: Enter the wishes
-    private: true
+    private: false
   vars:
-   PERSON: "Siva from global "
+   PERSON: "Siva from global variable"
    WISHES: "Morning" 
   
   tasks:
