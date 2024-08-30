@@ -1,7 +1,7 @@
 ---
-- name: Variable Types
+- name: Arguments pass command line arguments
   hosts: localhost
   tasks:
-    - name: Global variable
+    - name: Arguments pass through CMD
       debug:
         msg: "Hi, {{PERSON}} Good {{WISHES}}"
