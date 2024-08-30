@@ -14,3 +14,7 @@
     - name: Inventory varaible
       debug:
         msg: "Inventory variable. We have to add variable in inventory file"
+    - name: Command line varibale
+      debug:
+        msg: "We can mention variable at command level."
+      

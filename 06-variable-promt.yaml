@@ -1,0 +1,15 @@
+- name: Promt varaible
+  hosts: localhost
+  vars_prompt:
+  - name: USERNAME
+    prompt: Please enter the user name
+    private: false #user can see what you entered
+  - name: PASSWORD
+    prompt: Please enter the password
+    private: true  #user can not see what you entered
+  tasks:
+   - name: Promt variable
+     debug:
+       msg: "username is {{USERNAME}}, Password is {{PASSWORD}}"
+  
+  
