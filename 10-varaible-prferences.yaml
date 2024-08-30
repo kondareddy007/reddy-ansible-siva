@@ -16,9 +16,9 @@
   
   tasks:
    - name: Check which variabe taken first
-     vars:
-      PERSON: "Siva from task"
-      WiSHES: "Morning"
+    #  vars:
+    #   PERSON: "Siva from task"
+    #   WiSHES: "Morning"
      debug:
        msg: "I am {{PERSON}}, Good {{WISHES}}"  
 
