@@ -1,6 +1,7 @@
-- name: Pass arguments throught command line 
+---
+- name: Variable Types
   hosts: localhost
   tasks:
-   - name: Arguments pass through CMD
+    - name: Global variable
       debug:
-        msg: "Hi, {{PERSON}}, Good {{WISHES}} "
+        msg: "Hi, {{PERSON}} Good {{WISHES}}"
