@@ -2,5 +2,5 @@
   hosts: localhost
   tasks:
    - name: Checking user is exists or not
-     command: id roboshop
-     risister: user
+      command: id roboshop
+      risister: user
