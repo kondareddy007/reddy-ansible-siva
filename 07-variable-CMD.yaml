@@ -1,0 +1,6 @@
+- name: Pass arguments throught command line 
+  hosts: localhost
+  tasks:
+   - name: Arguments pass through CMD
+     degug:
+       msg: "Hi, {{PERSON}}, Good {{WISHES}} "
