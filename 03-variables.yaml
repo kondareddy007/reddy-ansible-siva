@@ -1,9 +1,10 @@
+---
 - name: Variable concept
   hosts: localhost
   tasks:
-  - name: Send one message
-     debug:
-       msg: "hellow darling"
-  - name: Send another message
-     debug:
-       msg: "hellow pessi"
+    - name: Send one message
+      debug:
+        msg: hellow darling
+    - name: Send another message
+      debug:
+        msg: hellow pessi
