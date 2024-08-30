@@ -1,6 +1,7 @@
 ---
 - name: Variable Types
   hosts: localhost
+  gather_facts: false
   tasks:
     - name: Global variable
       debug:
