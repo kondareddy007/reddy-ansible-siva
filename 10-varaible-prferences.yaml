@@ -1,5 +1,6 @@
 - name: Variable preferences
   hosts: localhost
+  become: true
   vars_files:
   - variable.yaml
   vars_prompt:
