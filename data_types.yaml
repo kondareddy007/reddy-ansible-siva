@@ -1,7 +1,7 @@
 - name: Data types
   hosts: localhost
   vars:
-   NAME: "Siva"
+   NAME: Siva
    SKILLS:
    - Devops
    - Python
