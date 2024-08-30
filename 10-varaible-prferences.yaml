@@ -1,0 +1,24 @@
+- name: Variable preferences
+  hosts: localhost
+  vars_files:
+  - variable.yaml
+  vars_prompt:
+  - name: PERSON
+    prompt: Enter person name
+    private: flase 
+  - name: WISHES
+    prompt: Enter the wishes
+    private: true
+  vars:
+   PERSON: "Siva from global "
+   WISHES: "Morning" 
+  
+  tasks:
+   - name: Check which variabe taken first
+     vars:
+      PERSON: "Siva from task"
+      WiSHES: "Morning"
+     debug:
+       msg: "I am {{PERSON}}, Good {{WISHES}}"  
+  
+  
