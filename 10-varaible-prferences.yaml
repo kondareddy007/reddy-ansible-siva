@@ -1,8 +1,8 @@
 - name: Variable preferences
   hosts: localhost
   become: true
-  vars_files:
-  - variable.yaml
+  # vars_files:
+  # - variable.yaml
   vars_prompt:
   - name: PERSON
     prompt: Enter person name
@@ -23,6 +23,8 @@
        msg: "I am {{PERSON}}, Good {{WISHES}}"  
 
 #CMD (Command line)
+#local variable
+#variable file
 
   
   
