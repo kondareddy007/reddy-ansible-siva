@@ -1,0 +1,6 @@
+- name: Variable getting from inventory
+  hosts: localhost
+  tasks:
+   - name: Variable from inventory
+     debug:
+       msg: "I am learning {{Course}}, Trainer is {{Trainer}} With duration is {{Duration}} "
