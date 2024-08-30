@@ -1,0 +1,24 @@
+- name: Data types
+  hosts: localhost
+  vars:
+   NAME: "Siva"
+   SKILLS:
+   - Devops
+   - Python
+   - C
+   - Java
+   EXPERIANCE:
+     Devops: 7
+     Docker: 4
+     Ansible: 3
+   Trainer: true
+   tasks:
+    - name: Print key value
+      debug:
+        msg: "Name is {{NAME}}"
+    - name: Print key value
+      debug:
+        msg: "Skills is {{SKILLS}}"
+    - name: Print key value
+      debug:
+        msg: "Experinace is {{EXPERIANCE}}"
