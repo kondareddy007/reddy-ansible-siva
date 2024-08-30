@@ -1,0 +1,10 @@
+- name: Variable PLAY-1
+  hosts: localhost
+  vars:
+   Course: "Devops"
+   Trainer: "Siva"
+   Duration: "110 HRS"
+  tasks:
+   - name: Variable PLAY-1
+     debug: 
+       msg: "I am learning {{Course}}, tarnier is {{Trainer}} with duration {{Duration}}"
