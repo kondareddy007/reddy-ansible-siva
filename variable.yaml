@@ -1,3 +1,5 @@
-Course: "Devops"
-Trainer: "Sive"
-Duration: "110 HRS"
+# Course: "Devops"
+# Trainer: "Sive"
+# Duration: "110 HRS"
+PERSON: "Siva from variable file"
+WISHES: "Morning"
