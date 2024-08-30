@@ -1,0 +1,6 @@
+- name: Variable concept
+  hosts: localhost
+  tasks:
+  - name: Send one message
+     debug:
+       msg: "hellow darling"
