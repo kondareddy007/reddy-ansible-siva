@@ -1,5 +1,6 @@
 - name: Data types
   hosts: localhost
+  gather_facts: false
   vars:
    NAME: Siva
    SKILLS:
