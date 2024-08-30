@@ -2,5 +2,5 @@
   hosts: localhost
   tasks:
    - name: Arguments pass through CMD
-      degug:
+      debug:
         msg: "Hi, {{PERSON}}, Good {{WISHES}} "
