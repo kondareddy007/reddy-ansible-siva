@@ -1,9 +1,9 @@
 - name: Task level variable
   hosts: localhost
-  vars:
-   Course: Devops
-   Trainer: Prasanna
-   Duration: "120 HRS"
+  # vars:
+  #  Course: Devops
+  #  Trainer: Prasanna
+  #  Duration: "120 HRS"
   tasks:
    - name: Task level variables
      vars:
