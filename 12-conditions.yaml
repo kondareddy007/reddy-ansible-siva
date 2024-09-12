@@ -4,3 +4,4 @@
    - name: Checking user is exists or not
      ansible.builtin.command : id roboshop
      risister: user
+     
