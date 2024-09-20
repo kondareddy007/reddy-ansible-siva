@@ -1,1 +1,5 @@
-ansible_password: Devops321
+- name: ping playbook
+  hosts: web
+  tasks:
+  - name: ping the server
+    ansible.builtin.ping:
