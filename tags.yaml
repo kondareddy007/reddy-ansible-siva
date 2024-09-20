@@ -16,4 +16,12 @@
       msg: "Hello, AWS"
     tags:
     - AWS
-    
+
+  Commands:-
+  ----------
+  # ansible -i inventory.ini all -m ping
+  #ansible-playbook -i inventory.ini   tags.yaml
+  # ansible-playbook -i inventory.ini  -t AWS tags.yaml -->run only AWS task
+  # ansible-playbook -i inventory.ini  -t Devops tags.yaml --> run only Devops tag
+
+
