@@ -1,0 +1,19 @@
+- name: Ansible tags
+  hosts: localhost
+  become: true
+  tasks:
+  - name: Ping the server
+    ping: 
+
+  - name: Print the message
+    debug:
+      msg: "Hello, Devops"
+    tags:
+    - Devops
+
+  - name: Print the message
+    debug:
+      msg: "Hello, AWS"
+    tags:
+    - AWS
+    

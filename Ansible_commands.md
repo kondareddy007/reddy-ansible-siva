@@ -18,5 +18,20 @@ DRY --> Don,t repeat your self
 We created a function kept code inside. Whenever you want call the finction
 Reduce duplicate code and a central place to change.
 
+# ansible-playbook -i inventory.ini -e ansible_user=centos -e ansible_password=DevOps321 -e components=mongodb main.yaml --> Ansible roles 
+
+# cp /etc/ansible/ansible.cfg test/
+# export ANSIBLE_CONFIG=/home/centos/test/ansible.cfg --> to set the variable
+# unset ANSIBLE_CONFIG ---> unset env variable
+#cp /etc/ansible/ansible.cfg ansible.cfg
+# cat ansible.cfg 
+# ansible-config init --disabled > ansible.cfg --->To generate an example config file (a "disabled" one with all default settings, commented out):
+
+Calalogue service l;ocation
+---------------------------
+# cat /etc/systemd/system/catalogue.service
+
+
+
 
 
